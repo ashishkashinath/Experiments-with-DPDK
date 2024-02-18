@@ -34,5 +34,15 @@ This repo captures the different experiments with DPDK on Logic Supply.
 
 + A successful compilation and run would show the following:
 
+    ![Alt text](figs/after-hugepages.png "")
+
++ Without hugepages, `dpdk` would give an error as follows:
+
+    ![Alt text](figs/before-hugepages-normal.png "")
+
+    -  Even with `sudo` privileges:
+
+        ![Alt text](figs/before-hugepages-sudo.png "")
+
 
 
