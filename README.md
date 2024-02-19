@@ -36,6 +36,8 @@ This repo captures the different experiments with DPDK on Logic Supply.
 
     ![Alt text](figs/after-hugepages.png "")
 
+### Common Issues
+
 + Without hugepages, `dpdk` would give an error as follows:
 
     ![Alt text](figs/before-hugepages-normal.png "")
@@ -45,4 +47,8 @@ This repo captures the different experiments with DPDK on Logic Supply.
         ![Alt text](figs/before-hugepages-sudo.png "")
 
 
++ One needs to include <pcap.h> in the headers to run a DPDK application, which can be installed by:
 
+    ```
+    sudo apt-get install libpcap-dev
+    ```
